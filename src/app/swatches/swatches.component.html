@@ -1,0 +1,20 @@
+<div class="swatches">
+    <section 
+    *ngFor="let swatch of swatches; let i = index"
+    [attr.id]="i"
+    [attr.data-index]="i"  
+    (click)="onSelect(i)"
+    class="{{ selected ? 'selected' : 'nope' }}"  
+    style="background-color: #{{ swatch.h }}"
+    >
+        <span>{{ swatch.r }}</span>
+        <div class="details">
+            <p>{{ swatch.r }}
+            {{ swatch.p }}
+            {{ swatch.c }}
+            {{ swatch.h }}
+            {{ swatch.fr }}
+            </p>
+        </div>
+    </section>
+</div>

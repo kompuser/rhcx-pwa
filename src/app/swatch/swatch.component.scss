@@ -1,0 +1,12 @@
+section {
+	padding: 1rem;
+	min-width: 100vw;
+	height: 10vh;
+	scroll-snap-align: start;
+	text-align: center;
+	position: relative;
+    //transition: height 0.3s ease;
+    .details {
+        display: none
+    }
+}
